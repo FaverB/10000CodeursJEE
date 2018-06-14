@@ -24,7 +24,7 @@ public class AddCodeurs extends HttpServlet {
      */
     public AddCodeurs() {
         super();
-        // TODO Auto-generated constructor stub
+        
     }
 
 	/**
