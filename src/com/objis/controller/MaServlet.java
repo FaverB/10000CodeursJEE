@@ -40,12 +40,12 @@ public class MaServlet extends HttpServlet {
 			String name = request.getParameter("user");
 			String password = request.getParameter("pass");
 			
-			if(password.equals("objis")) {
+			if(password.equals("objis") && name.equals("biazo")) {
 				request.getRequestDispatcher("/WEB-INF/welcome.html").forward(request, response);
 			}
 			else {
 				out.println("<font color='red'><b>Mot de passe incorrect</b></font>");
-				request.getRequestDispatcher("/WEB-INF/erreur.html").forward(request, response);
+				request.getRequestDispatcher("/WEB-INF/index.html").include(request, response);
 			}
 		}finally {
 			out.close();
